@@ -16,7 +16,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="lg:w-5/12 lg:ml-10 h-full w-full">
-                        <img src="https://i.ibb.co/CQBrpPB/Rectangle-2.png" className="w-full block h-80 lg:h-full object-cover object-center" alt="hero-pic" />
+                        <img src="../src/static/stylish-men.jpg" className="w-full block h-80 lg:h-full object-cover object-center" alt="hero-pic" />
                     </div>
                 </div>
             </div>
