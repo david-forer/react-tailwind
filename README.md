@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/github/forks/vivekascoder/vite-react-tailwind-jit?style=for-the-badge">
 </p>
 
-This template allows you to quickly scaffold a React project with React Router, TailwindCss with JIT Compiler and vite as a bundler. We use Vite because it's much faster than webpack. We use tailwindcss JIT compiler because it makes tailwindcss build time negligible and offers more features that you can check here [Tailwind JIT](https://tailwindcss.com/docs/just-in-time-mode). Talking about Vite, you can find more information here [Vite](https://vitejs.dev/).
+Ecommerce website project that uses React with React Router, TailwindCss with JIT Compiler and vite as a bundler. We use Vite because it's much faster than webpack. We use tailwindcss JIT compiler because it makes tailwindcss build time negligible and offers more features that you can check here [Tailwind JIT](https://tailwindcss.com/docs/just-in-time-mode). Talking about Vite, you can find more information here [Vite](https://vitejs.dev/).
 
 
 After clonning it, you can simply go to the folder and type `yarn` to install the dependencies.
