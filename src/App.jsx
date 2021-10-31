@@ -1,20 +1,24 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import {BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+import React, {useState, useEffect} from 'react';
+import Router from './components/Router';
+import Product from './components/Product';
 
 function App() {
+  const [productData, setProductData] = useState();
+
+  useEffect(async() => {
+    const productData = await fetch('https://fakestoreapi.com/products/').then(res=>res.json())
+
+    setProductData(productData)
+
+    // console.log(productData)
+  }, [])
+
+
   return (
-    <BrowserRouter>
-    <div className="pt-20">
-      <Navbar />
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} exact />
-      </Switch>
-    </div>
-    </BrowserRouter>
+    <>
+    <Router />
+    { productData && <Product productInfo={productData} />}
+    </>
   )
 }
 
