@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import Product from './../components/Product';
+import ProductCard from '../components/ProductCard';
 import Highlight from './../components/Highlight';
 import Hero from './../components/Hero';
+import Featured from './../components/Featured';
 
 function Home() {
   const [productData, setProductData] = useState();
@@ -11,15 +12,16 @@ function Home() {
 
     setProductData(productData)
 
-    // console.log(productData)
+    
   }, [])
 
   return (
     <div>
       
       <Hero />
+      { productData && <Featured productInfo={productData} />}
       <Highlight />
-      { productData && <Product productInfo={productData} />}
+      
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Product = ({ productInfo }) => {
+const ProductCard = ({ productInfo }) => {
   const { id, title, price, description, category, image, rating } =
     productInfo;
 
@@ -11,7 +11,7 @@ const Product = ({ productInfo }) => {
        
        
                         <div className="relative pt-16 pb-24 bg-gray-50 px-16 flex justify-center items-center" key={product.id}>
-                            <img className src={product.image} alt="laptop-1" />
+                            <img className="" src={product.image} alt="laptop-1" />
                             
                             <div className="flex flex-col absolute bottom-4 left-4 w-full pr-8">
                                 <div>
@@ -40,4 +40,4 @@ const Product = ({ productInfo }) => {
   );
 };
 
-export default Product;
+export default ProductCard;

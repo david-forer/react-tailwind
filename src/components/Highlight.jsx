@@ -2,13 +2,13 @@ import React from "react";
 
 const Highlight = () => {
     return (
-        <div className="2xl:container 2xl:mx-auto lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div className="3xl:container 2xl:mx-auto lg:px-20 md:py-12 md:px-6 py-9 px-4 ">
             <div className=" text-center">
                 <h2 className=" lg:text-4xl text-3xl lg:leading-9 leading-7 font-semibold text-gray-800">Our Delivery Process</h2>
                 <p className=" font-normal text-base lg:leading-4 leading-6 text-gray-600 lg:mt-4 md:mt-2 mt-4">Here is the procedure through which we guarantee that your order is delivered on time</p>
             </div>
 
-            <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-10  lg:mt-16 mt-10 ">
+            <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-10  lg:mt-16 mt-10 lg:px-40">
                 {/* Order Online Grid Card */}
                 <div className=" flex flex-col justify-start items-center ">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
