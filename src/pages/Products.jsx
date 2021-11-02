@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ProductCard from '../components/ProductCard';
+// import Loader from '../components/Loader';
+// import {Link} from 'react-router-dom'
 
 const Products = () => {
   const [products, setProducts] = useState();

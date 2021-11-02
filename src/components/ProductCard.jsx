@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const ProductCard = ({ productInfo }) => {
   const { id, title, price, description, category, image, rating } =
@@ -10,9 +11,10 @@ const ProductCard = ({ productInfo }) => {
       {productInfo.map((product) => (
        
        
-                        <div className="relative pt-16 pb-24 bg-gray-50 px-16 flex justify-center items-center" key={product.id}>
+                        <div className="relative pt-16 pb-24  px-16 flex justify-center items-center border-2" key={product.id}>
+                        <Link to={`/product/${product.id}`}>
                             <img className="" src={product.image} alt="laptop-1" />
-                            
+                          </Link>  
                             <div className="flex flex-col absolute bottom-4 left-4 w-full pr-8">
                                 <div>
                                     <p className="text-base leading-none text-gray-600">{product.title}</p>
