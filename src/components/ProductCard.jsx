@@ -21,7 +21,7 @@ const ProductCard = ({ productInfo }) => {
                                 </div>
                                 <div className="flex justify-between mt-2">
                                     <div>
-                                        <p className="text-base font-semibold leading-none text-gray-800">{product.price}</p>
+                                        <p className="text-base font-semibold leading-none text-gray-800">${product.price}</p>
                                     </div>
                                     <div className>
                                         <svg width={88} height={16} viewBox="0 0 88 16" fill="none" xmlns="http://www.w3.org/2000/svg">
