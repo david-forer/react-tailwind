@@ -5,25 +5,22 @@ import Hero from "./../components/Hero";
 import Featured from "./../components/Featured";
 import Contact from "./../components/Contact";
 import Loader from "./../components/Loader";
+import useFetch from "../hooks/useFetch";
+
+ const URL = `https://fakestoreapi.com/products/`;
 
 function Home() {
-  const [productData, setProductData] = useState();
-  const [loading, setLoading] = useState(false)
+  const { loading, error, data } = useFetch(URL);
+  
+  if (loading) return <Loader />;
+  if (error) return " Something Went Wrong!";
 
-  const url = `https://fakestoreapi.com/products/`;
-
-  useEffect(async () => {
-    const productData = await fetch(url).then((res) => res.json());
-    setLoading(true);
-    setProductData(productData);
-  }, [url]);
 
   return (
     <div>
       <Hero />
 
-      {/* { productData && <Featured productInfo={productData} />} */}
-      {loading ? ( productData && <Featured productInfo={productData} /> ) : <Loader />}
+      {data && <Featured productInfo={data} />}
       <Highlight />
       <Contact />
     </div>

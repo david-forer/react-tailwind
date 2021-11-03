@@ -8,14 +8,14 @@ const Featured = ({ productInfo }) => {
 
   return (
     <div className="2xl:mx-auto 3xl:container bg-gray-50 ">
-      <div className="lg:px-60 md:px-6 px-4 md:py-12 py-8">
+      <div className="xl:px-40 lg:px-12 md:px-6 px-4 md:py-12 py-8">
         <h1 className="text-4xl font-semibold leading-9 text-center text-gray-900 p-2">
           Featured Products
         </h1>
         <p className=" font-normal text-base lg:leading-4 leading-6 text-gray-600 lg:mt-2 md:mt-2 mt-4 text-center">
           These are our most popular products right now on the store.
         </p>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-x-8 gap-x-6 gap-y-36 mt-40">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:gap-x-8 gap-x-6 gap-y-36 mt-40">
           <div className="lg:w-72 h-60 bg-white shadow rounded flex flex-col items-center relative ">
             
               <img
