@@ -7,6 +7,7 @@ import Docs from "../pages/Docs";
 import Products from "../pages/Products";
 import Product from "../pages/Product";
 
+
 const Router = () => {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ const Router = () => {
           <Route path="/docs" component={Docs} exact />
           <Route path="/product/:id" component={Product} exact />
           <Route path="/products" component={Products} exact />
+          {/* <Route path="/login" component={Login} exact /> */}
         </Switch>
       </div>
     </BrowserRouter>
