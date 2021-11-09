@@ -6,9 +6,9 @@ import About from "../pages/About";
 import Docs from "../pages/Docs";
 import Products from "../pages/Products";
 import Product from "../pages/Product";
+import Cart from "./Cart";
 
-
-const Router = () => {
+const Router = ({ cartItems }) => {
   return (
     <BrowserRouter>
       <div className="pt-20">
@@ -19,6 +19,9 @@ const Router = () => {
           <Route path="/docs" component={Docs} exact />
           <Route path="/product/:id" component={Product} exact />
           <Route path="/products" component={Products} exact />
+          <Route path="/cart" exact>
+            <Cart />
+          </Route>
           {/* <Route path="/login" component={Login} exact /> */}
         </Switch>
       </div>

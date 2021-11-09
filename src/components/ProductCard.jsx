@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+// import formatCurrency from 'format-currency'
 
 const ProductCard = ({ productInfo }) => {
   const { id, title, price, description, category, image, rating } =
@@ -23,7 +24,7 @@ const ProductCard = ({ productInfo }) => {
                                     <div>
                                         <p className="text-base font-semibold leading-none text-gray-800">${product.price}</p>
                                     </div>
-                                    <div className>
+                                    <div className="">
                                         <svg width={88} height={16} viewBox="0 0 88 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8.00001 11.8334L3.88535 13.9967L4.67135 9.41472L1.33801 6.17005L5.93801 5.50338L7.99535 1.33472L10.0527 5.50338L14.6527 6.17005L11.3193 9.41472L12.1053 13.9967L8.00001 11.8334Z" fill="#FBBF24" stroke="#FBBF24" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />
                                             <path d="M32 11.8334L27.8853 13.9967L28.6713 9.41472L25.338 6.17005L29.938 5.50338L31.9953 1.33472L34.0527 5.50338L38.6527 6.17005L35.3193 9.41472L36.1053 13.9967L32 11.8334Z" fill="#FBBF24" stroke="#FBBF24" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />

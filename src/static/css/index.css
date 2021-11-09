@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+  .cart-container {
+    @apply max-w-2xl my-2 mx-auto bg-white p-8;
+  }
+  img {
+    @apply w-16 object-cover;
+  }
+  h3 {
+    @apply font-bold text-xl;
+  }
+  span {
+    @apply text-gray-500 text-sm;
+  }
+  input {
+    @apply mt-1 py-1 px-2 border border-gray-500;
+  }
+  .price {
+    @apply text-lg font-bold;
+  }
+}
