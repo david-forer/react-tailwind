@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import CartContext from "../context/cart/CartContext";
@@ -9,6 +9,7 @@ function Navbar() {
     useAuth0();
   const isUser = isAuthenticated && user;
   const { cartItems, showHideCart } = useContext(CartContext);
+  const [show, setshow] = useState(true);
 
   return (
     <div className="fixed left-0 right-0 top-0 h-16 shadow-md border-b-2 border-gray-100 bg-gray-900 ">
@@ -76,6 +77,7 @@ function Navbar() {
               </button>
             )}
           </div>
+
           <div className="text-gray-300 font-bold text-3xl hover:text-white ml-8 display: flex">
             <i className="fas fa-shopping-cart" aria-hidden='true' onClick={showHideCart} />
             {cartItems.length > 0 && (
@@ -84,6 +86,8 @@ function Navbar() {
               </div>
             )}
           </div>
+                
+
         </div>
       </nav>
     </div>
