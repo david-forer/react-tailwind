@@ -57,7 +57,7 @@ This is a simple e commerce page that has user authentication. I used Auth0 for 
 
 1. git clone https://github.com/david-forer/react-tailwind.git
 2. npm install or yarn to install dependencies
-3. Start an account at [Auth0] (https://auth0.com/)
+3. Start an account at [Auth0](https://auth0.com/)
 4. Replace the environment variables in Main.jsx with your own Auth0 domain and client id
 5. In Auth0 make sure you put localhost:3000 in for allowed URLs
 3. npm run dev will pull up live site on localhost:3000
@@ -81,7 +81,7 @@ A more robust cart with better styles would be helpful. Add pictures under large
 
 ## Acknowledgements
 
-- I started this project with a fork from [Vivek Kumar @vivekascoder] (https://github.com/vivekascoder) which was an initial set up with vite and tailwind jit
+- I started this project with a fork from [Vivek Kumar @vivekascoder](https://github.com/vivekascoder) which was an initial set up with vite and tailwind jit
 
 
 
