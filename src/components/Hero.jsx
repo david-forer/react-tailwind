@@ -18,7 +18,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="lg:w-5/12 lg:ml-10 h-full w-full">
-                        <img src="../src/static/stylish-men.jpg" className="w-full block h-80 lg:h-full object-cover object-center" alt="hero-pic" />
+                        <img src="https://res.cloudinary.com/david-j-forer/image/upload/v1636632176/stylish-men_c5vc6z.jpg" className="w-full block h-80 lg:h-full object-cover object-center" alt="hero-pic" />
                     </div>
                 </div>
             </div>
